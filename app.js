@@ -1,3 +1,51 @@
+let name = prompt('enter a name');
+let month = prompt('enter a month');
+let day = Number(prompt('enter a number between 1-28'));
+let year = Number(prompt('enter a year'));
+let meal = prompt('enter breakfast, lunch, or dinner');
+let food = prompt('enter a questionable food');
+let price = Number(prompt('enter a number between 8-32'));
+let days = Number(prompt('enter a number'));
+let tax = price * 0.06625;
+let newPrice = Number(price + tax);
+newPrice = newPrice.toFixed(2);
+let emotion = prompt('enter an emotion');
+let years = Number(prompt('enter a number'));
+let oldBalance = newPrice--;
+let interest = oldBalance * 0.1849 * years;
+let newBalance = interest + oldBalance;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* JAVASCRIPT MAD LIBS — FULL-BLOCK STARTER
    Write your OWN prompt questions and story. This file deliberately does not contain a completed answer.
    Keep your JavaScript here, not inside index.html.

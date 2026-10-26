@@ -14,7 +14,7 @@ let years = Number(prompt('enter a number'));
 let oldBalance = newPrice--;
 let interest = oldBalance * 0.1849 * years;
 let newBalance = interest + oldBalance;
-
+//no//
 
 
 

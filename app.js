@@ -1,4 +1,4 @@
-let name = prompt('enter a name');
+let name = prompt('enter a name'); //fun fact! this is a variable!!!!!!!!!!!!!!!//
 let month = prompt('enter a month');
 let day = Number(prompt('enter a number between 1-28'));
 let year = Number(prompt('enter a year'));
@@ -8,12 +8,29 @@ let price = Number(prompt('enter a number between 8-32'));
 let days = Number(prompt('enter a number'));
 let tax = price * 0.06625;
 let newPrice = Number(price + tax);
-newPrice = newPrice.toFixed(2);
+newPrice = newPrice.toFixed(2); //fun fact! this makes the newPrice varible rounded to the hundreths place!//
 let emotion = prompt('enter an emotion');
 let years = Number(prompt('enter a number'));
-let oldBalance = newPrice--;
+let oldBalance = newPrice-1;
 let interest = oldBalance * 0.1849 * years;
 let newBalance = interest + oldBalance;
+newBalance = newBalance.toFixed(2);
+let amountFood = Math.floor(newBalance / newPrice); //fun fact! Math.floor rounds the output number down!//
+let leftover = newBalance % newPrice; //fun fact! this calculates how many times newPrice goes into newBalance then outputs the remainder!//
+leftover = leftover.toFixed(2);
+
+
+
+
+
+
+
+
+let story = `It's ${month +' '+ day +', '+' '+ year}, and ${name} is in a gas station. They are buying ${meal} for the next ${days} days. What do they buy? Why, ${food} of course!
+The price of the ${food} was ${price} dollars. At the register, the total comes out to be ${newPrice} dollars when accounting for the ever-terrible U.S.
+sales tax. ${name} was so ${emotion} at the sight of this absurd number that they blacked out. They wake up in a sewer and they check their phone. 
+They realize they have been asleep for ${years} years. This is great news because of bank interest in which their bank account, which had ${oldBalance} dollars before, 
+now has ${newBalance} dollars in it, which means they can afford ${amountFood} of ${food} and still have ${leftover} dollars left!`;
 //no//
 
 
@@ -80,7 +97,7 @@ let newBalance = interest + oldBalance;
 
 // PART 6 — DISPLAY ON THE WEBPAGE
 // TODO: Uncomment and complete the line below once your story variable exists.
-// document.getElementById("madlib-output").innerHTML = story;
+document.getElementById("madlib-output").innerHTML = story;
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
